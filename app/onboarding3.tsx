@@ -2,11 +2,11 @@ import { Pressable, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { Image } from 'expo-image'
 import { router } from 'expo-router'
-const onboarding = () => {
+const onboardin3 = () => {
   return (
     <View style={{flex: 1,gap:20}}>
       <Image
-        source={require('../assets/onboarding-image-1.png')}
+        source={require('../assets/onboarding-image-3.png')}
         style={{ width: '100%', height: '55%', borderRadius:20 }}/>
         <View style={{padding: 30, flex: 1}}>
           <Text style={{fontSize:35, textAlign:'center', fontWeight:700}}>Life is short and the world is 
@@ -22,12 +22,12 @@ const onboarding = () => {
           </Text>
 
           <View style={{flexDirection:'row', justifyContent:'center', gap:5, marginTop:20}}>
+            <View style={{padding:5, borderRadius:100, backgroundColor:'lightblue'}}></View>
+            <View style={{padding:5, borderRadius:100, backgroundColor:'lightblue'}}></View>
             <View style={{padding:5, borderRadius:100,width:40, backgroundColor:'#0D6EFD'}}></View>
-            <View style={{padding:5, borderRadius:100, backgroundColor:'lightblue'}}></View>
-            <View style={{padding:5, borderRadius:100, backgroundColor:'lightblue'}}></View>
           </View>
 
-          <Pressable onPress={()=> router.push('/onboarding2')} style={{marginTop:20, backgroundColor:'#0D6EFD', padding:20, borderRadius:20, alignItems:'center'}}>
+          <Pressable onPress={()=> router.push('/signIn')} style={{marginTop:20, backgroundColor:'#0D6EFD', padding:20, borderRadius:20, alignItems:'center'}}>
           <Text style={{color:'#fff',fontSize:18}}>Get Started</Text>
         </Pressable>
 
@@ -37,6 +37,6 @@ const onboarding = () => {
   )
 }
 
-export default onboarding
+export default onboardin3
 
 const styles = StyleSheet.create({})
